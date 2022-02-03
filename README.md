@@ -44,7 +44,7 @@
 
 ### 4.2 CSS
 
-### 4.3 Bootstrap 4.5
+### 4.3 Bootstrap 4.6
 
 ### 4.4 JavaScript
 
@@ -66,6 +66,13 @@ Added:
 
 - README template
 - prime_mobile django project
+
+### 6.2 Setup allauth
+
+Added:
+
+- Added log in and sign up functionality
+- Set up allauth
 
 ## 7.0 Deployment
 
