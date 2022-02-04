@@ -98,6 +98,11 @@ Added:
 - Static files
 - Font awesome
 
+### 6.6 Responsive nav-bar on desktop and mobile
+
+Additions:
+
+- Responsive nav-bar on desktop and mobile
 
 ## 7.0 Deployment
 
