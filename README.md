@@ -89,6 +89,16 @@ Added:
 - Created home app
 - Home page (index.html)
 
+### 6.5 Nav-bar progress and static files added
+
+Added:
+
+- base.css
+- Nav-bar progress
+- Static files
+- Font awesome
+
+
 ## 7.0 Deployment
 
 ### 7.1 Local deployment

@@ -1,0 +1,9 @@
+html {
+    height: 100%;
+}
+
+.search-width {
+    width: 200px;
+    margin-right: 10px;
+    margin-left: 40px;
+}
