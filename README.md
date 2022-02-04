@@ -74,6 +74,21 @@ Added:
 - Added log in and sign up functionality
 - Set up allauth
 
+### 6.3 Added allauth and base template
+
+Added:
+
+- Allauth templates
+- Base template added
+
+### 6.4 Home app created and base block templates
+
+Added:
+
+- Base template blocks
+- Created home app
+- Home page (index.html)
+
 ## 7.0 Deployment
 
 ### 7.1 Local deployment
