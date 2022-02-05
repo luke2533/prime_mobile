@@ -39,7 +39,7 @@
                 <div class="collapse navbar-collapse" id="nav-menu">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle text-black btn-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                                 Shop
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -49,21 +49,35 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" href="#">Contact Us</a>
+                            <a class="nav-link text-black btn-link" href="#">Contact Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black" href="#">Log in</a>
-                        </li>
+                        {% if request.user.is_authenticated %}
+                            {% if request.user.is_superuser %}
+                            <!-- If user is admin -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-black btn-link" href="#">Admin</a>
+                                </li>
+                            {% endif %}
+                            <!-- If user is signed in -->
+                            <li class="nav-item">
+                                <a class="nav-link text-black btn-link" href="#">Log out</a>
+                            </li>
+                        {% else %}
+                            <!-- If user isn't signed in -->
+                            <li class="nav-item">
+                                <a class="nav-link text-black btn-link" href="#">Log in</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black btn-link" href="#">Sign up</a>
+                            </li>
+                        {% endif %}
                         
-                        <li class="nav-item">
-                            <a class="nav-link text-black" href="#">Sign up</a>
-                        </li>
                     </ul>
                 </div>
                 <div>
                     <!-- Taken from django mini project -->
                     
-                    <form class="form-inline my-2 my-lg-0">
+                    <form class="form-inline">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black total-bag{% endif %} nav-link" href="">
                             <div class="text-center text-black">
                                 <!-- <div><i class="fas fa-shopping-bag fa-lg"></i></div> -->
@@ -99,6 +113,26 @@
         {% block postloadjs %}
         {% endblock %}
 
-        <footer></footer>
+        <footer>
+            <div class="container-fluid">
+                <div class="row justify-content-center footer">
+                    <div class="col-5">
+                        <h2 class="footer-mobile">Social media</h2>
+                        <a href="https://facebook.com" target="_blank" class="footer-link footer-mobile-link"><i class="fab fa-facebook-square"></i> Facebook</a>
+                        <a href="https://youtube.com" target="_blank" class="footer-link footer-mobile-link"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="https://twitter.com" target="_blank" class="footer-link footer-mobile-link"><i class="fab fa-twitter"></i> Twitter</a>
+                        <a href="https://instagram.com" target="_blank" class="footer-link footer-mobile-link"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+    
+                    <div class="col-5">
+                        <h2 class="footer-mobile">Navigation</h2>
+                        <a href="" class="footer-link footer-mobile-link"><i class="fas fa-home"></i> Home</a>
+                        <a href="" class="footer-link footer-mobile-link"><i class="fas fa-mobile"></i> Shop</a>
+                        <a href="" class="footer-link footer-mobile-link"><i class="fas fa-shopping-basket"></i> Basket</a>
+                        <a href="" class="footer-link footer-mobile-link"><i class="fas fa-phone"></i> Contact Us</a>
+                    </div>
+                </div>
+            </div>    
+        </footer>
     </body>
 </html>

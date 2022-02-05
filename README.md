@@ -62,28 +62,28 @@
 
 ### 6.1 Initial commit
 
-Added:
+Additions:
 
 - README template
 - prime_mobile django project
 
 ### 6.2 Setup allauth
 
-Added:
+Additions:
 
 - Added log in and sign up functionality
 - Set up allauth
 
 ### 6.3 Added allauth and base template
 
-Added:
+Additions:
 
 - Allauth templates
 - Base template added
 
 ### 6.4 Home app created and base block templates
 
-Added:
+Additions:
 
 - Base template blocks
 - Created home app
@@ -91,7 +91,7 @@ Added:
 
 ### 6.5 Nav-bar progress and static files added
 
-Added:
+Additions:
 
 - base.css
 - Nav-bar progress
@@ -103,6 +103,13 @@ Added:
 Additions:
 
 - Responsive nav-bar on desktop and mobile
+
+### 6.7 Responsive footer and nav-bar
+
+Additions:
+
+- Responsive Footer on desktop, tablet and mobile
+- Progress on nav-bar
 
 ## 7.0 Deployment
 

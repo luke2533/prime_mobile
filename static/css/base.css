@@ -12,13 +12,14 @@ html {
 }
 
 .total-bag {
-    margin-right: 61px;
+    margin-right: 25px;
     border: 1px solid black;
     border-radius: 45px;
 }
 
 .search-bar {
-    width: 175px;
+    width: 210px;
+    height: 42px;
     border: 1px solid black;
     border-right: none;
     margin-right: 0px!important;
@@ -27,6 +28,7 @@ html {
 
 .search-submit {
     width: 50px;
+    height: 42px;
     background-color: #fff;
     border: 1px solid black;
     border-left: none;
@@ -36,3 +38,50 @@ html {
 .text-black {
     color: black!important;
 }
+
+.footer-link {
+    display: block;
+    font-size: 1.2em;
+    padding: 3px;
+    margin-top: 3px;
+}
+
+.footer{
+    background-color: #f8f9fa!important;
+}
+
+
+@media (min-width: 1024px) {
+    .btn-link{
+        border: 1px solid black;
+        border-radius: 45px;
+        margin: 2px;
+        padding: 5px;
+        max-width: 100px;
+        text-align: center;
+    }
+    
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 426px) {
+    .footer-mobile {
+        font-size: 1.5em;
+        display: inline-block;   
+        margin-top: 10px;          
+    }
+    .footer-mobile-link {
+        font-size: 1em;
+        display: block;
+        
+    }
+}
+
+
