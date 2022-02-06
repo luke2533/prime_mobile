@@ -31,7 +31,7 @@
             
             <!-- Top nav -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><h1>PrimeMobile</h1></a>
+                <a class="navbar-brand" href="{% url 'home' %}"><h1>PrimeMobile</h1></a>
                 <button class="mobile-menu navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars text-black"></i>
                 </button>
@@ -110,9 +110,6 @@
         {% block content %}
         {% endblock %}
 
-        {% block postloadjs %}
-        {% endblock %}
-
         <footer>
             <div class="container-fluid">
                 <div class="row justify-content-center footer">
@@ -126,13 +123,16 @@
     
                     <div class="col-5">
                         <h2 class="footer-mobile">Navigation</h2>
-                        <a href="" class="footer-link footer-mobile-link"><i class="fas fa-home"></i> Home</a>
+                        <a href="{% url 'home' %}" class="footer-link footer-mobile-link"><i class="fas fa-home"></i> Home</a>
                         <a href="" class="footer-link footer-mobile-link"><i class="fas fa-mobile"></i> Shop</a>
                         <a href="" class="footer-link footer-mobile-link"><i class="fas fa-shopping-basket"></i> Basket</a>
                         <a href="" class="footer-link footer-mobile-link"><i class="fas fa-phone"></i> Contact Us</a>
                     </div>
                 </div>
             </div>    
+
+            {% block postloadjs %}
+            {% endblock %}
         </footer>
     </body>
 </html>

@@ -111,6 +111,13 @@ Additions:
 - Responsive Footer on desktop, tablet and mobile
 - Progress on nav-bar
 
+### 6.8 Home page
+
+Additions:
+
+- Banner image
+- Home page store links
+
 ## 7.0 Deployment
 
 ### 7.1 Local deployment

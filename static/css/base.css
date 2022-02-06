@@ -2,6 +2,14 @@ html {
     height: 100%;
 }
 
+body {
+    background: url(/media/banner.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /* height: calc(100vh - 164px); */
+}
+
+/* Nav-bar */
+
 .mobile-menu {
     padding: 10px 15px;
     font-size: 1.25rem;
@@ -35,9 +43,9 @@ html {
     border-radius: 0px 45px 45px 0px;
 }
 
-.text-black {
-    color: black!important;
-}
+/* Nav-bar */
+
+/* Footer */
 
 .footer-link {
     display: block;
@@ -48,8 +56,54 @@ html {
 
 .footer{
     background-color: #f8f9fa!important;
+    bottom: 0;
+    position: absolute;
+    width: 100%
 }
 
+/* Footer */
+
+/* Genral */
+
+.text-black {
+    color: black!important;
+}
+
+.home {
+    margin-bottom: 175px;
+    margin-top: 125px;
+}
+
+.banner-title{
+    color: white;
+    font-size: 6em;
+}
+
+.banner-btn {
+    color: white;
+    background-color: black;
+    padding: 15px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-link {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    padding-left: 12.5px;
+    margin-left: 12.5px;
+    font-size: 1.75em;
+    border-radius: 90px;
+    width: 45px;
+    height: 45px;
+
+}
+
+/* Genral */
+
+/* Breakpoints */
 
 @media (min-width: 1024px) {
     .btn-link{
@@ -81,6 +135,10 @@ html {
         font-size: 1em;
         display: block;
         
+    }
+    .banner-title{
+        color: white;
+        font-size: 3.5em;
     }
 }
 
