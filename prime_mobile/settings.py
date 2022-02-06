@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
+    'store',
     # Use in site to allow users to connect social media accounts when signing up
 
 ]

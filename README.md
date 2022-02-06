@@ -118,6 +118,14 @@ Additions:
 - Banner image
 - Home page store links
 
+### 6.9 Store app, store fixtures and images
+
+Additions:
+
+- Store app
+- Store fixtures
+- Store images
+
 ## 7.0 Deployment
 
 ### 7.1 Local deployment

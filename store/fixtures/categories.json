@@ -1,0 +1,26 @@
+[
+    {
+        "pk":1,
+        "models":"store.category",
+        "name":"sim_free",
+        "freindly.name":"SIM Free"
+    },
+    {
+        "pk":2,
+        "models":"store.category",
+        "name":"sim_only",
+        "freindly.name":"SIM Only"
+    },
+    {
+        "pk":3,
+        "models":"store.category",
+        "name":"sim_plan",
+        "freindly.name":"SIM Plan"
+    },
+    {
+        "pk":4,
+        "models":"store.category",
+        "name":"deals",
+        "freindly.name":"Deals"
+    }
+]
