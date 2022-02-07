@@ -1,26 +1,34 @@
 [
     {
         "pk":1,
-        "models":"store.category",
-        "name":"sim_free",
-        "freindly.name":"SIM Free"
+        "model":"store.Category",
+        "fields": {
+            "name":"sim_free",
+            "friendly_name":"SIM Free"
+        }
     },
     {
         "pk":2,
-        "models":"store.category",
-        "name":"sim_only",
-        "freindly.name":"SIM Only"
+        "model":"store.Category",
+        "fields": {
+            "name":"sim_only",
+            "friendly_name":"SIM Only"
+        }
     },
     {
         "pk":3,
-        "models":"store.category",
-        "name":"sim_plan",
-        "freindly.name":"SIM Plan"
+        "model":"store.Category",
+        "fields": {
+            "name":"sim_plan",
+            "friendly_name":"SIM Plan"
+        }
     },
     {
         "pk":4,
-        "models":"store.category",
-        "name":"deals",
-        "freindly.name":"Deals"
+        "model":"store.Category",
+        "fields": {
+            "name":"deals",
+            "friendly_name":"Deals"
+        }
     }
 ]

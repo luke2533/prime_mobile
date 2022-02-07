@@ -1,98 +1,114 @@
 [
     {
         "pk":1,
-        "models":"store.sim_only",
-        "category":2,
-        "name":"Bronze 12M",
-        "cost":15,
-        "data":25,
-        "minutes":"Unlimited",
-        "text":"Unlimited",
-        "5g":"False",
-        "length":12
+        "model":"store.sim_only",
+        "fields": {
+            "category":2,
+            "name":"Bronze 12M",
+            "cost":15,
+            "data":25,
+            "minutes":"Unlimited",
+            "text":"Unlimited",
+            "data_5g":"False",
+            "length":12
+        }
     },
     {
         "pk":2,
-        "models":"store.sim_only",
-        "category":2,
-        "name":"Silver 12M",
-        "cost":20,
-        "data":50,
-        "minutes":"Unlimited",
-        "text":"Unlimited",
-        "5g":"False",
-        "length":12
+        "model":"store.sim_only",
+        "fields": {
+            "category":2,
+            "name":"Silver 12M",
+            "cost":20,
+            "data":50,
+            "minutes":"Unlimited",
+            "text":"Unlimited",
+            "data_5g":"False",
+            "length":12
+        }
     },
     {
         "pk":3,
-        "models":"store.sim_only",
-        "category":2,
-        "name":"Gold 12M",
-        "cost":25,
-        "data":100,
-        "minutes":"Unlimited",
-        "text":"Unlimited",
-        "5g":"True",
-        "length":12
+        "model":"store.sim_only",
+        "fields": {
+            "category":2,
+            "name":"Gold 12M",
+            "cost":25,
+            "data":100,
+            "minutes":"Unlimited",
+            "text":"Unlimited",
+            "data_5g":"True",
+            "length":12
+        }
     },
     {
         "pk":4,
-        "models":"store.sim_only",
-        "category":2,
-        "name":"Platinum 12M",
-        "cost":35,
-        "data":"Unlimited",
-        "minutes":"Unlimited",
-        "text":"Unlimited",
-        "5g":"True",
-        "length":12
+        "model":"store.sim_only",
+        "fields": {
+            "category":2,
+            "name":"Platinum 12M",
+            "cost":35,
+            "data":"Unlimited",
+            "minutes":"Unlimited",
+            "text":"Unlimited",
+            "data_5g":"True",
+            "length":12
+        }
     },
     {
         "pk":5,
-        "models":"store.sim_only",
-        "category":2,
-        "name":"Bronze 24M",
-        "cost":35,
-        "data":25,
-        "minutes":"Unlimited",
-        "text":"Unlimited",
-        "5g":"False",
-        "length":24
+        "model":"store.sim_only",
+        "fields": {
+            "category":2,
+            "name":"Bronze 24M",
+            "cost":35,
+            "data":25,
+            "minutes":"Unlimited",
+            "text":"Unlimited",
+            "data_5g":"False",
+            "length":24
+        }
     },
     {
         "pk":6,
-        "models":"store.sim_only",
-        "category":2,
-        "name":"Silver 24M",
-        "cost":35,
-        "data":50,
-        "minutes":"Unlimited",
-        "text":"Unlimited",
-        "5g":"False",
-        "length":24
+        "model":"store.sim_only",
+        "fields": {
+            "category":2,
+            "name":"Silver 24M",
+            "cost":35,
+            "data":50,
+            "minutes":"Unlimited",
+            "text":"Unlimited",
+            "data_5g":"False",
+            "length":24
+        }
     },
     {
         "pk":7,
-        "models":"store.sim_only",
-        "category":2,
-        "name":"Gold 24M",
-        "cost":35,
-        "data":100,
-        "minutes":"Unlimited",
-        "text":"Unlimited",
-        "5g":"True",
-        "length":24
+        "model":"store.sim_only",
+        "fields": {
+            "category":2,
+            "name":"Gold 24M",
+            "cost":35,
+            "data":100,
+            "minutes":"Unlimited",
+            "text":"Unlimited",
+            "data_5g":"True",
+            "length":24
+        }
     },
     {
         "pk":8,
-        "models":"store.sim_only",
-        "category":2,
-        "name":"Platinum 24M",
-        "cost":35,
-        "data":"Unlimited",
-        "minutes":"Unlimited",
-        "text":"Unlimited",
-        "5g":"True",
-        "length":24
+        "model":"store.sim_only",
+        "fields": {
+            "category":2,
+            "name":"Platinum 24M",
+            "cost":35,
+            "data":"Unlimited",
+            "minutes":"Unlimited",
+            "text":"Unlimited",
+            "data_5g":"True",
+            "length":24
+        }
     }
 ]

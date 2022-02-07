@@ -126,6 +126,11 @@ Additions:
 - Store fixtures
 - Store images
 
+### 6.10 Store page and changes to fixtures
+
+- store.html
+- Updated store models
+
 ## 7.0 Deployment
 
 ### 7.1 Local deployment
