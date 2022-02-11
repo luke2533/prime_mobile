@@ -6,23 +6,46 @@ body {
     background: url(/media/banner.jpg) no-repeat center center fixed;
     background-size: cover;
     /* height: calc(100vh - 164px); */
+    position: relative;
+    min-height: 100vh;
+    color: white;
+}
+
+body a {
+    color: white;
+}
+
+body a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 /* Nav-bar */
+
+.nav-blue {
+    background-color: transparent;
+}
 
 .mobile-menu {
     padding: 10px 15px;
     font-size: 1.25rem;
     line-height: 1;
     background-color: transparent;
-    border: 1px solid black!important;
+    border: 1px solid white!important;
     border-radius: 0.25rem;
+    color: white;
 }
 
 .total-bag {
     margin-right: 25px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 45px;
+    box-shadow: 1px 1px 1px 1px #C31a8f;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+}
+
+.total-bag:hover {
+    box-shadow: 2px 1px #21fdda;
 }
 
 .search-bar {
@@ -32,6 +55,12 @@ body {
     border-right: none;
     margin-right: 0px!important;
     border-radius: 45px 0px 0px 45px;
+    box-shadow: 1px 1px 1px 1px #C31a8f;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+}
+
+.search-bar:hover {
+    box-shadow: 2px 1px #21fdda;
 }
 
 .search-submit {
@@ -41,6 +70,12 @@ body {
     border: 1px solid black;
     border-left: none;
     border-radius: 0px 45px 45px 0px;
+    box-shadow: 1px 1px 1px 1px #C31a8f;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+}
+
+.search-submit:hover {
+    box-shadow: 2px 1px #21fdda;
 }
 
 /* Nav-bar */
@@ -55,28 +90,32 @@ body {
 }
 
 .footer{
-    background-color: #f8f9fa!important;
+    background-color: rgba(4, 22, 46, 0.6)!important;
     bottom: 0;
-    position: absolute;
-    width: 100%
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    /* border-top: 0.5px solid black; */
 }
 
 /* Footer */
 
-/* Genral */
-
-.text-black {
-    color: black!important;
-}
+/* Home */
 
 .home {
     margin-bottom: 175px;
-    margin-top: 125px;
+    margin-top: 150px;
 }
 
 .banner-title{
     color: white;
     font-size: 6em;
+}
+
+.banner-subtitle {
+    color: white;
+    font-size: 2.5em;
 }
 
 .banner-btn {
@@ -101,20 +140,117 @@ body {
 
 }
 
+/* Home */
+
 /* Genral */
+
+.text-black {
+    color: #181818!important;
+}
+
+.overlay{
+    height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #04162e;
+	z-index: -1;
+}
+
+/* Genral */
+
+/* Store page */
+
+.product-card {
+    background-color: #Cfd2d7;
+    border: solid black 1px;
+    color: #181818;
+    width: 350px!important;
+    height: 550px;
+    margin-top: 10px;
+    border-radius: 18px;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 1px 1px 1px 1px #C31a8f;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+}
+
+.product-card:hover {
+    box-shadow: 5px 5px 5px 5px #21fdda;
+}
+
+.product-card h3, h4 {
+    margin-bottom: 5px;
+}
+
+.product-card hr {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.product-content {
+    position: relative;
+    left: 0;
+    text-align: start;
+    padding-right: 0px;
+}
+
+.product-image {
+    height: 400px;
+    border-radius: 45px;
+    object-fit: cover;
+}
+
+.product-details {
+    padding-left: 0;
+}
+
+.product-btn {
+    border: solid black 1px;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: #04162e;
+    box-shadow: 1px 1px 1px #C31a8f;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    margin-top: 65px;
+}
+
+.product-btn:hover {
+    box-shadow: 2px 1px #21fdda;
+}
+
+/* Store page */
 
 /* Breakpoints */
 
+@media(min-width: 1440px){
+    .row-desktop {
+        justify-content: space-around;
+    }
+}
+
 @media (min-width: 1024px) {
     .btn-link{
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 45px;
         margin: 2px;
         padding: 5px;
         max-width: 100px;
         text-align: center;
+        color: white;
+        box-shadow: 1px 1px 1px 1px #C31a8f;
+        transition: all .3s cubic-bezier(0,0,.5,1);
     }
-    
+
+    .btn-link:hover {
+        box-shadow: 2px 1px #21fdda;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -140,6 +276,5 @@ body {
         color: white;
         font-size: 3.5em;
     }
+
 }
-
-

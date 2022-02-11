@@ -30,45 +30,45 @@
         <header>
             
             <!-- Top nav -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg nav-blue">
                 <a class="navbar-brand" href="{% url 'home' %}"><h1>PrimeMobile</h1></a>
                 <button class="mobile-menu navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars text-black"></i>
+                    <i class="fas fa-bars"></i>
                 </button>
               
                 <div class="collapse navbar-collapse" id="nav-menu">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-black btn-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle btn-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                                 Shop
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item text-black" href="#">SIM Only</a>
-                                <a class="dropdown-item text-black" href="#">SIM Free</a>
-                                <a class="dropdown-item text-black" href="#">SIM Plans</a>
+                                <a class="dropdown-item" href="#">SIM Only</a>
+                                <a class="dropdown-item" href="#">SIM Free</a>
+                                <a class="dropdown-item" href="#">SIM Plans</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black btn-link" href="#">Contact Us</a>
+                            <a class="nav-link btn-link" href="#">Contact Us</a>
                         </li>
                         {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <!-- If user is admin -->
                                 <li class="nav-item">
-                                    <a class="nav-link text-black btn-link" href="#">Admin</a>
+                                    <a class="nav-link btn-link" href="#">Admin</a>
                                 </li>
                             {% endif %}
                             <!-- If user is signed in -->
                             <li class="nav-item">
-                                <a class="nav-link text-black btn-link" href="#">Log out</a>
+                                <a class="nav-link btn-link" href="#">Log out</a>
                             </li>
                         {% else %}
                             <!-- If user isn't signed in -->
                             <li class="nav-item">
-                                <a class="nav-link text-black btn-link" href="#">Log in</a>
+                                <a class="nav-link btn-link" href="#">Log in</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-black btn-link" href="#">Sign up</a>
+                                <a class="nav-link btn-link" href="#">Sign up</a>
                             </li>
                         {% endif %}
                         
@@ -78,8 +78,8 @@
                     <!-- Taken from django mini project -->
                     
                     <form class="form-inline">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black total-bag{% endif %} nav-link" href="">
-                            <div class="text-center text-black">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %} total-bag{% endif %} nav-link" href="">
+                            <div class="text-center">
                                 <!-- <div><i class="fas fa-shopping-bag fa-lg"></i></div> -->
                                 <h5 class="my-0">
                                     <i class="fas fa-shopping-bag"></i>
@@ -111,8 +111,9 @@
         {% endblock %}
 
         <footer>
-            <div class="container-fluid">
-                <div class="row justify-content-center footer">
+            <div class="container-fluid footer">
+                <div class="row justify-content-center">
+                    <!-- Footer class can go in row -->
                     <div class="col-5">
                         <h2 class="footer-mobile">Social media</h2>
                         <a href="https://facebook.com" target="_blank" class="footer-link footer-mobile-link"><i class="fab fa-facebook-square"></i> Facebook</a>

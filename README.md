@@ -126,6 +126,19 @@ Additions:
 - Store fixtures
 - Store images
 
+### 6.10 New branch
+
+Additions:
+
+- CSS updated from main
+- Store page updated
+- Updated store models
+- Changes to home page design
+- Nav and footer changes
+- Product card desing updated
+
+Issue:  
+
 ## 7.0 Deployment
 
 ### 7.1 Local deployment
