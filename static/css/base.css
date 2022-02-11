@@ -13,6 +13,14 @@ body {
 
 body a {
     color: white;
+<<<<<<< HEAD
+=======
+}
+
+body a:hover {
+    color: white;
+    text-decoration: none;
+>>>>>>> dev
 }
 
 /* Nav-bar */
@@ -26,14 +34,21 @@ body a {
     font-size: 1.25rem;
     line-height: 1;
     background-color: transparent;
-    border: 1px solid black!important;
+    border: 1px solid white!important;
     border-radius: 0.25rem;
+    color: white;
 }
 
 .total-bag {
     margin-right: 25px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 45px;
+    box-shadow: 1px 1px 1px 1px #C31a8f;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+}
+
+.total-bag:hover {
+    box-shadow: 2px 1px #21fdda;
 }
 
 .search-bar {
@@ -43,6 +58,12 @@ body a {
     border-right: none;
     margin-right: 0px!important;
     border-radius: 45px 0px 0px 45px;
+    box-shadow: 1px 1px 1px 1px #C31a8f;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+}
+
+.search-bar:hover {
+    box-shadow: 2px 1px #21fdda;
 }
 
 .search-submit {
@@ -52,6 +73,12 @@ body a {
     border: 1px solid black;
     border-left: none;
     border-radius: 0px 45px 45px 0px;
+    box-shadow: 1px 1px 1px 1px #C31a8f;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+}
+
+.search-submit:hover {
+    box-shadow: 2px 1px #21fdda;
 }
 
 /* Nav-bar */
@@ -87,6 +114,11 @@ body a {
 .banner-title{
     color: white;
     font-size: 6em;
+}
+
+.banner-subtitle {
+    color: white;
+    font-size: 2.5em;
 }
 
 .banner-btn {
@@ -135,21 +167,35 @@ body a {
 
 .product-card {
     background-color: #Cfd2d7;
+<<<<<<< HEAD
     color: #181818;
     width: 400px;
+=======
+    border: solid black 1px;
+    color: #181818;
+    width: 350px!important;
+>>>>>>> dev
     height: 550px;
     margin-top: 10px;
     border-radius: 18px;
     display: block;
     text-align: center;
     padding: 15px;
+<<<<<<< HEAD
     box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+=======
+    box-shadow: 1px 1px 1px 1px #C31a8f;
+>>>>>>> dev
     transition: all .3s cubic-bezier(0,0,.5,1);
 }
 
 .product-card:hover {
+<<<<<<< HEAD
     box-shadow: 2px 4px 12px #21fdda;
 
+=======
+    box-shadow: 5px 5px 5px 5px #21fdda;
+>>>>>>> dev
 }
 
 .product-card h3, h4 {
@@ -165,6 +211,10 @@ body a {
     position: relative;
     left: 0;
     text-align: start;
+<<<<<<< HEAD
+=======
+    padding-right: 0px;
+>>>>>>> dev
 }
 
 .product-image {
@@ -173,21 +223,48 @@ body a {
     object-fit: cover;
 }
 
+<<<<<<< HEAD
+=======
+.product-details {
+    padding-left: 0;
+}
+
+>>>>>>> dev
 .product-btn {
     border: solid black 1px;
     padding: 10px;
     border-radius: 40px;
+<<<<<<< HEAD
     background-color: black;
     box-shadow: 1px 1px 1px #C31a8f;
     color: #C31a8f;
+=======
+    background-color: #04162e;
+    box-shadow: 1px 1px 1px #C31a8f;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+    color: white;
+>>>>>>> dev
     display: block;
     font-size: 1.2em;
     margin-top: 65px;
 }
 
+<<<<<<< HEAD
+=======
+.product-btn:hover {
+    box-shadow: 2px 1px #21fdda;
+}
+
+>>>>>>> dev
 /* Store page */
 
 /* Breakpoints */
+
+@media(min-width: 1440px){
+    .row-desktop {
+        justify-content: space-around;
+    }
+}
 
 @media (min-width: 1024px) {
     .btn-link{
@@ -198,8 +275,17 @@ body a {
         max-width: 100px;
         text-align: center;
         color: white;
+<<<<<<< HEAD
+=======
+        box-shadow: 1px 1px 1px 1px #C31a8f;
+        transition: all .3s cubic-bezier(0,0,.5,1);
+>>>>>>> dev
     }
-    
+
+    .btn-link:hover {
+        box-shadow: 2px 1px #21fdda;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -225,6 +311,5 @@ body a {
         color: white;
         font-size: 3.5em;
     }
+
 }
-
-
