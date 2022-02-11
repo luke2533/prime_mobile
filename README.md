@@ -128,8 +128,18 @@ Additions:
 
 ### 6.10 Store page and changes to fixtures
 
+Additions:
+
 - store.html
 - Updated store models
+
+### 6.11 CSS design chages to Home, Nav, Footer and product cards
+
+Additions:
+
+- Changes to home page design
+- Nav and footer changes
+- Product card design updated
 
 ## 7.0 Deployment
 

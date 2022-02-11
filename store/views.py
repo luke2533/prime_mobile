@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-from . models import Category, SimFree, SimOnly, SimPlan
+from . models import Category, SimFree
 
 
 def store(request):

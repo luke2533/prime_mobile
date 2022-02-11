@@ -1,3 +1,47 @@
-{% static "base.html" %}
+{% extends "base.html" %}
 {% load static %}
 
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid justify-content-center">
+        <div class="row">
+            <div class="col-11">
+                <h5>Showing X out of X</h5>
+            </div>
+
+            <div class="col-1">
+                <select name="" id="">
+                    <option value="">Sort By ---</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Option 2 -->
+            <div class="col-sm-10 col-md-6 col-lg-4">
+                <div class="product-card">  
+                    <div class="row">
+                        <div class="col-6 product-content">
+                            <h3>Samsung S21</h3>
+                            <h2>£779.99</h2>
+                            <h4>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </h4>
+                        </div>
+                        <div class="col-6">
+                            <a href="" class="product-btn">More details</a>
+                        </div>
+                    </div> 
+            
+                    <hr>
+                    <img src="../media/s21.jpg" class="product-image" alt="">
+                </div>
+            </div> 
+        </div>  
+        
+    </div>
+{% endblock %}
